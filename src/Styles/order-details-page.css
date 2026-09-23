@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.order-details-page {
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+  padding: 100px 20px 40px;
+}
+
+.order-details-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header */
+
+.order-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.order-details-header h1 {
+  color: var(--text-primary);
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.order-details-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.order-details-status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background-color: var(--btn-main);
+  color: white;
+  font-size: 13px;
+}
+
+/* Card */
+
+.order-details-card {
+  padding: 25px;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(45, 45, 45, 0.12);
+}
+
+.order-details-card h2 {
+  color: var(--text-primary);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Items */
+
+.order-details-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.order-details-item img {
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.order-details-item-info {
+  flex: 1;
+}
+
+.order-details-item-info h3 {
+  color: var(--text-primary);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.order-details-item-info p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.order-details-item strong {
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+/* Total */
+
+.order-details-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #d6d0ca;
+}
+
+.order-details-total span {
+  color: var(--text-main);
+  font-size: 22px;
+}
+
+.order-details-total strong {
+  color: var(--btn-main);
+  font-size: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .order-details-page {
+    padding: 120px 20px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .order-details-page {
+    padding: 100px 15px 30px;
+  }
+
+  .order-details-card {
+    padding: 20px;
+  }
+
+  .order-details-header h1 {
+    font-size: 24px;
+  }
+
+  .order-details-item img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .order-details-item {
+    gap: 12px;
+  }
+}

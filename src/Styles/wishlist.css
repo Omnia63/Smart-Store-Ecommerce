@@ -1,0 +1,144 @@
+.wishlist-container {
+  max-width: 1100px;
+  margin: 100px auto 50px;
+  padding: 30px;
+  background: var(--bg-sec);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.wishlist-container h1 {
+  margin-bottom: 30px;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wishlist-table thead {
+  background: var(--bg-main);
+}
+
+.wishlist-table th {
+  padding: 16px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.wishlist-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid #e7e7e7;
+  vertical-align: middle;
+}
+
+.wishlist-table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+
+/* Columns */
+.product-column,
+.item-info {
+  text-align: left;
+}
+
+.price-column,
+.item-price,
+.stock-column,
+.stock,
+.actions-column,
+.action-btn {
+  text-align: center;
+}
+
+
+/* Product info */
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.item-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+
+/* Price */
+.item-price {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+
+/* Stock */
+.stock {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+
+/* Add to cart button */
+.addtocart-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--btn-main);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.addtocart-btn:hover {
+  background: var(--btn-hover);
+}
+
+
+/* Empty wishlist */
+.wishlist-empty {
+  margin: 150px auto;
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wishlist-container {
+    margin: 90px 15px 30px;
+    padding: 20px;
+  }
+
+  .wishlist-table th,
+  .wishlist-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .item-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .addtocart-btn {
+    width: 100%;
+  }
+}

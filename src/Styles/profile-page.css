@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 75px 20px 20px;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(45, 45, 45, 0.12);
+}
+
+.profile-container h1 {
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.profile-email {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #D6D0CA;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.profile-option:hover {
+  border-color: var(--btn-main);
+  background-color: #F8F3ED;
+}
+
+.profile-option span {
+  font-size: 24px;
+}
+
+.profile-option h2 {
+  color: var(--text-primary);
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.profile-option p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.account-info {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #D6D0CA;
+}
+
+.account-info h2 {
+  color: var(--text-primary);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.account-info p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.account-info strong {
+  color: var(--text-primary);
+}
+
+.logout-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-main);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: var(--btn-hover);
+}
+
+@media (max-width: 991px) {
+  .profile-page {
+    padding: 120px 20px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-container {
+    padding: 25px 20px;
+  }
+
+  .profile-container h1 {
+    font-size: 24px;
+  }
+}

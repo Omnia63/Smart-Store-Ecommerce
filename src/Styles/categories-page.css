@@ -1,0 +1,27 @@
+.category-btn {
+  width: 100%;
+  min-height: 90px;
+  background-color: var(--btn-main);
+  border: none;
+  color: white;
+  padding: 14px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.category-btn i {
+  font-size: 20px;
+}

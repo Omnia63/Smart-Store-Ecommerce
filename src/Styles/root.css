@@ -1,0 +1,12 @@
+:root {
+  /* Backgrounds */
+   --bg-main: #F5F3EF;   /* keep this (navbar / base) */
+  --bg-sec: white;
+  /*  Text */
+  --text-primary: #2D2D2D;
+  --text-secondary: #6B6B6B;
+
+  /* buttons */
+  --btn-main: #C8A27C;
+  --btn-hover: #B48E68;
+}
