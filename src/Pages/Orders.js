@@ -1,10 +1,9 @@
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import "../Styles/orders-page.css";
+import { Link } from "react-router-dom";
 
 function Orders() {
   const orders = useSelector((state) => state.orders.orders);
-  const navigate = useNavigate();
 
   return (
     <div className="orders-page">
@@ -13,8 +12,13 @@ function Orders() {
 
         {orders.length === 0 ? (
           <div className="empty-orders">
+            <div className="empty-orders-icon">📦</div>
             <h2>No orders yet</h2>
-            <p>You haven't placed any orders yet.</p>
+            <p> You haven't placed any orders yet. </p>
+            <Link to="/products" className="continue-shopping-btn">
+              {" "}
+              Start Shopping{" "}
+            </Link>
           </div>
         ) : (
           <div className="orders-list">
@@ -22,24 +26,11 @@ function Orders() {
               <div className="order-card" key={order.id}>
                 <div className="order-header">
                   <div>
-                    <h2>
-                      Order #{String(order.id).slice(-6)}
-                    </h2>
+                    <h2>Order #{String(order.id).slice(-6)}</h2>
 
-                    <p>
-                      {new Date(
-                        order.createdAt
-                      ).toLocaleDateString()}
-                    </p>
+                    <p>{new Date(order.createdAt).toLocaleDateString()}</p>
                   </div>
-
-                  <button
-                    onClick={() =>
-                      navigate(`/orders/${order.id}`)
-                    }
-                  >
-                    Show Details
-                  </button>
+                  <Link to={`/orders/${order.id}`}> Show Details </Link>
                 </div>
               </div>
             ))}

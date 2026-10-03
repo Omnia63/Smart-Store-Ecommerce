@@ -40,3 +40,13 @@
   border-color: var(--btn-main);
   color: #fff;
 }
+@media (max-width: 576px) {
+  .products-page .pagination {
+    gap: 4px;
+    max-width: 100%;
+  }
+
+  .products-page .page-link {
+    padding: 0.375rem 0.55rem;
+  }
+}

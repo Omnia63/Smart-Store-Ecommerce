@@ -24,11 +24,7 @@ function Profile() {
       <div className="profile-container">
 
         <h1>Welcome back, {user?.user_metadata?.name}! 👋</h1>
-
-        <p className="profile-email">
-          {user?.email}
-        </p>
-
+        
         <div className="profile-options">
 
           <Link to="/orders" className="profile-option">
@@ -55,20 +51,6 @@ function Profile() {
             </div>
           </Link>
 
-        </div>
-
-        <div className="account-info">
-          <h2>Account Information</h2>
-
-          <p>
-            <strong>Name:</strong>{" "}
-            {user?.user_metadata?.name}
-          </p>
-
-          <p>
-            <strong>Email:</strong>{" "}
-            {user?.email}
-          </p>
         </div>
 
         <button
