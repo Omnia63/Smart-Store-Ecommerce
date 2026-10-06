@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Smart-Store-Ecommerce/static/css/main.de99fe4f.css",
-    "main.js": "/Smart-Store-Ecommerce/static/js/main.e8d3e723.js",
+    "main.css": "/Smart-Store-Ecommerce/static/css/main.92141362.css",
+    "main.js": "/Smart-Store-Ecommerce/static/js/main.c115affc.js",
     "static/js/453.c8e29440.chunk.js": "/Smart-Store-Ecommerce/static/js/453.c8e29440.chunk.js",
     "static/media/bootstrap-icons.woff?": "/Smart-Store-Ecommerce/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/Smart-Store-Ecommerce/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
@@ -10,12 +10,12 @@
     "static/media/fa-regular-400.woff2": "/Smart-Store-Ecommerce/static/media/fa-regular-400.cfbad32c79d9dda6af4a.woff2",
     "static/media/fa-v4compatibility.woff2": "/Smart-Store-Ecommerce/static/media/fa-v4compatibility.296da06936a3373940c8.woff2",
     "index.html": "/Smart-Store-Ecommerce/index.html",
-    "main.de99fe4f.css.map": "/Smart-Store-Ecommerce/static/css/main.de99fe4f.css.map",
-    "main.e8d3e723.js.map": "/Smart-Store-Ecommerce/static/js/main.e8d3e723.js.map",
+    "main.92141362.css.map": "/Smart-Store-Ecommerce/static/css/main.92141362.css.map",
+    "main.c115affc.js.map": "/Smart-Store-Ecommerce/static/js/main.c115affc.js.map",
     "453.c8e29440.chunk.js.map": "/Smart-Store-Ecommerce/static/js/453.c8e29440.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de99fe4f.css",
-    "static/js/main.e8d3e723.js"
+    "static/css/main.92141362.css",
+    "static/js/main.c115affc.js"
   ]
 }
