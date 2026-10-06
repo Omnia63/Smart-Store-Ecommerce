@@ -1,16 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  orders: [],
-};
-
 const ordersSlice = createSlice({
   name: "ordersSlice",
-  initialState,
+  initialState: JSON.parse(localStorage.getItem("orders")) || [],
 
   reducers: {
     addOrder: (state, action) => {
-      state.orders.push(action.payload);
+      state.push(action.payload);
     },
 
     clearOrders: (state) => {

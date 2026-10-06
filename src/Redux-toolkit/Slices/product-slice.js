@@ -1,10 +1,25 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const fetchProducts = createAsyncThunk('productSlice/fetchProducts', async({ limit, skip }) => {
-    const res = await fetch (`https://dummyjson.com/products?limit=${limit}&skip=${skip}`);
+export const fetchProducts = createAsyncThunk(
+  "productSlice/fetchProducts",
+  async ({ limit, skip, sortBy, order }) => {
+    let url = `https://dummyjson.com/products?limit=${limit}&skip=${skip}`;
+
+    if (sortBy && order) {
+      url += `&sortBy=${sortBy}&order=${order}`;
+    }
+
+    const res = await fetch(url);
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch products");
+    }
+
     const data = await res.json();
     return data;
-})
+  }
+);
+
 
 export const fetchProductsByCategory = createAsyncThunk(
   "productSlice/fetchProductsByCategory",
